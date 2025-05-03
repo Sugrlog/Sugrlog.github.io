@@ -1,0 +1,25 @@
+/* Placeholder styles for images */
+.placeholder {
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 14px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.placeholder::before {
+    content: attr(data-placeholder-text);
+}
+
+.placeholder-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.placeholder-screenshot {
+    width: 300px;
+    height: 600px;
+} 

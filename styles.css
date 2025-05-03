@@ -1,0 +1,367 @@
+:root {
+    --primary-color: #3b82f6;
+    --primary-dark: #2563eb;
+    --secondary-color: #10b981;
+    --text-color: #1f2937;
+    --light-text: #4b5563;
+    --background: #ffffff;
+    --light-background: #f9fafb;
+    --border-color: #e5e7eb;
+    --accent-color: #8b5cf6;
+    --danger-color: #ef4444;
+    --premium-color: #f59e0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Navigation */
+header {
+    background-color: var(--light-background);
+    padding: 2rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#app-icon {
+    height: 40px;
+    width: auto;
+    margin-right: 1rem;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 0 5rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--light-text);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); */
+}
+
+.app-store-button img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.app-store-button:hover img {
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+}
+
+.features h2, .premium h2, .perfect-for h2, .faq h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--light-background);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--light-text);
+}
+
+/* Premium Section */
+.premium {
+    padding: 5rem 0;
+    background-color: var(--light-background);
+}
+
+.premium-note {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: var(--premium-color);
+}
+
+.premium-card {
+    background-color: var(--background);
+    border: 2px solid var(--premium-color);
+}
+
+.premium-card .feature-icon {
+    color: var(--premium-color);
+}
+
+/* Perfect For Section */
+.perfect-for {
+    padding: 5rem 0;
+}
+
+.audience-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.audience-card {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+.audience-card h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 5rem 0;
+    background-color: var(--light-background);
+}
+
+.faq-item {
+    background-color: var(--background);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.faq-item p {
+    color: var(--light-text);
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-color);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 30px;
+    width: auto;
+    margin-right: 0.8rem;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.copyright {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .audience-cards {
+        flex-direction: column;
+    }
+    
+    .audience-card {
+        width: 100%;
+        text-align: center;
+    }
+} 
