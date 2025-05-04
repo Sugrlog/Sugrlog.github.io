@@ -139,6 +139,17 @@ nav {
     transform: scale(1.05);
 }
 
+.health-badge img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.health-badge:hover img {
+    transform: scale(1.05);
+}
+
 /* Features Section */
 .features {
     padding: 5rem 0;
