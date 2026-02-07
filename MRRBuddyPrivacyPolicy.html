@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MRR Buddy</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #1d1d1f;
+            --secondary-text: #6e6e73;
+            --bg-color: #ffffff;
+            --section-bg: #f5f5f7;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #f5f5f7;
+                --secondary-text: #86868b;
+                --bg-color: #000000;
+                --section-bg: #1c1c1e;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .last-updated {
+            color: var(--secondary-text);
+            font-size: 14px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: var(--section-bg);
+            border-radius: 18px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--secondary-text);
+            font-size: 13px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: February 7, 2026</p>
+        </header>
+
+        <section>
+            <h2>Privacy First</h2>
+            <p>MRR Buddy is built with a simple philosophy: <span class="highlight">Your data is your business.</span>
+            </p>
+            <p>The app is designed to prioritize privacy. Personal data, Stripe information, and financial metrics are
+                processed locally on your device and are not transmitted to us or any third-party service
+                provider.</p>
+        </section>
+
+        <section>
+            <h2>Data Handling</h2>
+            <p>We do not currently collect or have access to the following information:</p>
+            <ul>
+                <li><span class="highlight">Stripe API Keys:</span> Your API keys are stored exclusively in your local
+                    macOS Keychain.</li>
+                <li><span class="highlight">Financial Data:</span> Your MRR, subscription counts, growth metrics, and
+                    customer information are fetched directly from Stripe and processed locally on your machine.</li>
+                <li><span class="highlight">Personal Information:</span> We do not require account creation, nor do we
+                    collect your name, email, or any identifiable information.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Analytics and Improvement</h2>
+            <p>To improve the quality and performance of MRR Buddy, we may implement anonymous usage analytics in the
+                future. This would involve collecting non-identifiable data about how the app is used (e.g., which
+                features are accessed or crash reports) to help us diagnose issues and prioritize improvements. Any
+                implementation of analytics will be done with privacy in mind and will not include your personal
+                financial data or API keys.</p>
+            <p> We do not currently collect any analytics data.</p>
+        </section>
+
+        <section>
+            <h2>Direct Connection to Stripe</h2>
+            <p>MRR Buddy communicates directly with Stripe's API to fetch your data. This communication is encrypted and
+                secured via standard HTTPS. The data received is used to display your dashboard in the menu bar and is
+                not shared with third parties.</p>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>The app currently avoids the use of third-party SDKs, tracking pixels, or advertising frameworks. The
+                primary external communication is between the app and the official Stripe and Exchange Rate APIs for the
+                purpose of functioning as intended.</p>
+        </section>
+
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time to reflect changes in our practices or legal
+                obligations. We encourage you to review this page periodically for any updates. Any changes will be
+                reflected on this page with an updated "Last Updated" date.</p>
+        </section>
+
+        <div class="footer">
+            <p>&copy; 2026 J Kamile.</p>
+        </div>
+    </div>
+</body>
+
+</html>
